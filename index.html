@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Photo Transfer</title>
+<style>
+  :root { --bg: #fbfaf7; --fg: #1f2328; --muted: #5b616b; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16181c; --fg: #e8e6e3; --muted: #a3a9b3; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 .5rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  a { color: var(--link); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Personal Photo Transfer</h1>
+  <p class="sub">A private tool for copying one person's own photo library into their own Google Drive.</p>
+
+  <h2>What it does</h2>
+  <p>Personal Photo Transfer runs on its owner's Mac. Each night it copies the owner's photos and videos
+     from their Amazon Photos account into their own Google Drive, at full original quality, until the
+     whole library has been copied.</p>
+  <p>To avoid copying anything twice, it reads the names, sizes and checksums of the files already in the
+     owner's Google Drive, and skips photos that are already there. It only adds files: it never changes or
+     deletes anything in Google Drive.</p>
+
+  <h2>Who it is for</h2>
+  <p>This is a personal project, used only by its owner with their own Google account. It is not offered as a
+     service, and no one else's data is accessed.</p>
+
+  <h2>Privacy</h2>
+  <p>Nothing is sent anywhere except to Amazon and Google, and no data is shared with anyone. Read the
+     <a href="https://ericwongoz.github.io/privacy.html">privacy policy</a>.</p>
+
+  <footer>Contact: <a href="mailto:eric987@gmail.com">YOUR-EMAIL</a></footer>
+</main>
+</body>
+</html>
